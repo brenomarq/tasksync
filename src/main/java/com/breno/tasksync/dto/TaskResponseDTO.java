@@ -5,9 +5,10 @@ import com.breno.tasksync.entities.tasks.Priority;
 import com.breno.tasksync.entities.tasks.Task;
 
 import java.util.Date;
+import java.util.UUID;
 
 public record TaskResponseDTO(
-        Long id,
+        UUID id,
         String title,
         String description,
         Priority priority,
