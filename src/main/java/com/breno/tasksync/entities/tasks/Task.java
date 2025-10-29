@@ -1,6 +1,6 @@
 package com.breno.tasksync.entities.tasks;
 
-import com.breno.tasksync.dto.TaskRequestDTO;
+import com.breno.tasksync.dto.tasks.TaskRequestDTO;
 import com.breno.tasksync.entities.users.User;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

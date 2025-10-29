@@ -1,5 +1,6 @@
 package com.breno.tasksync.entities.users;
 
+import com.breno.tasksync.dto.users.UserRequestDTO;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -25,4 +26,10 @@ public class User {
     private UserRole role;
     @Temporal(TemporalType.TIMESTAMP)
     private Date createdAt;
+
+    public User(UserRequestDTO user) {
+        this.username = user.username();
+        this.password = user.password();
+        this.role = user.role();
+    }
 }

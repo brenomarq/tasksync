@@ -1,4 +1,4 @@
-package com.breno.tasksync.dto;
+package com.breno.tasksync.dto.tasks;
 
 import com.breno.tasksync.entities.tasks.Priority;
 

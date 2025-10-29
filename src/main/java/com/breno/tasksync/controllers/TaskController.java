@@ -1,7 +1,7 @@
 package com.breno.tasksync.controllers;
 
-import com.breno.tasksync.dto.TaskRequestDTO;
-import com.breno.tasksync.dto.TaskResponseDTO;
+import com.breno.tasksync.dto.tasks.TaskRequestDTO;
+import com.breno.tasksync.dto.tasks.TaskResponseDTO;
 import com.breno.tasksync.entities.tasks.Task;
 import com.breno.tasksync.repositories.TaskRepository;
 import org.springframework.beans.factory.annotation.Autowired;
