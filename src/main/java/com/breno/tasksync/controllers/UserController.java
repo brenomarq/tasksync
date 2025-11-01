@@ -22,7 +22,8 @@ public class UserController {
     @GetMapping
     public ResponseEntity<List<UserResponseDTO>> getAll() {
         List<UserResponseDTO> users = repository.findAll()
-                .stream().map(UserResponseDTO::new)
+                .stream()
+                .map(UserResponseDTO::new)
                 .toList();
 
         return ResponseEntity.ok(users);

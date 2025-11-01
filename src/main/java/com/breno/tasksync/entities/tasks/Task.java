@@ -3,10 +3,8 @@ package com.breno.tasksync.entities.tasks;
 import com.breno.tasksync.dto.tasks.TaskRequestDTO;
 import com.breno.tasksync.entities.users.User;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
+import org.springframework.stereotype.Service;
 
 import java.util.Date;
 import java.util.UUID;
@@ -14,6 +12,7 @@ import java.util.UUID;
 @Table(name = "tasks")
 @Entity(name = "tasks")
 @Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")
